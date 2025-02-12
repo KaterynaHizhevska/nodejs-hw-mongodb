@@ -5,11 +5,11 @@ import dotenv from 'dotenv';
 import router from './routers/contacts.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 import { notFoundHandler } from './middlewares/notFoundHandler.js';
-import { getEnvVar } from './utils/getEnvVar.js';
+
 
 dotenv.config();
 
-const PORT = Number(getEnvVar('PORT', '7777'));
+const PORT = process.env.PORT || 7777;
 export const setupServer = () => {
     const app = express();
 
