@@ -1,4 +1,4 @@
-import { SORT_ORDER, KEYS_OF_CONTACTS } from "../constants.js/constants.js";
+import { SORT_ORDER, KEYS_OF_CONTACTS } from "../constants/constants.js";
 
 const parseSortOrder = (sortOrder) => {
     const isKnowOrder = [SORT_ORDER.ASC, SORT_ORDER.DESC].includes(sortOrder);
